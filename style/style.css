@@ -8,7 +8,9 @@
 }
 .banner {
  min-height: 100vh;
- background: #120e0f;
+ background: #120e0f url(../img/bg.jpg);
+ background-position: center;
+ background-size: cover;
  padding: 40px 100px;
  display: flex;
  align-items: center;
@@ -69,6 +71,8 @@ header{
     background: #120e0f url(../img/menuBg.jpg);
     background-position: right;
     background-size: cover;
+    display: none;
+    padding-right: 100px;
 
 }
 
@@ -76,4 +80,45 @@ header{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    flex-direction:  column;
+
+}
+
+.navigation li {
+    list-style: none;
+    margin: 4px;
+}
+
+.navigation li a {
+    color: #fff;
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    text-decoration: none ;
+    font-weight:  600;
+    text-transform: uppercase;
+}
+
+.navigation li a:hover
+{
+    color: #e83c80;
+}
+
+.content {
+    position: relative;
+    width: 700px;
+
+}
+
+.content .textimg {
+
+    max-width: 600px;
+    width: 100%;
+
+}
+
+.content p {
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.75em;
+    font-weight: 300;
 }
